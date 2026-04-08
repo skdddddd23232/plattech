@@ -55,8 +55,8 @@ function App() {
   }).length;
 
   useEffect(() => {
-    fetchNotes();
-  }, []);
+  fetchNotes(); // eslint-disable-line react-hooks/exhaustive-deps
+}, []);
 
   return (
     <div className="wrap">
