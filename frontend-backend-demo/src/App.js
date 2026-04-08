@@ -41,6 +41,8 @@ function App() {
     fetchNotes();
   };
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+
   const handleKey = (e) => {
     if (e.key === "Enter") addNote();
   };
